@@ -6,7 +6,15 @@
       {{#if @blog.logo}}
       <nav>
         <a href="{{@blog.url}}" class="inline blog-logo-extra-border border circle">
-          <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
+          <!--<img src="{{@blog.logo}}" alt="{{@blog.title}}" class="ui small centered circular image bordered" />-->
+          <div class="ui rotate reveal">
+            <div class="visible content">
+              <img src="{{@blog.logo}}" class="ui small bordered circular image">
+            </div>
+            <div class="hidden content">
+              <img src="http://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="ui small bordered circular image">
+            </div>
+          </div>
         </a>
       </nav>
       {{/if}}
@@ -30,7 +38,7 @@
   {{#if @blog.logo}}
   <nav>
     <a href="{{@blog.url}}" class="inline blog-logo-extra-border border circle">
-      <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
+      <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="ui small centered circular image bordered" />
     </a>
   </nav>
   {{/if}}
