@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <title>{{meta_title}}</title>
@@ -11,21 +11,30 @@
     <link rel="author" href="//plus.google.com/+CarlosAzaustre?rel=author" />
     <link rel="shortcut icon" href="{{ asset "favicon.ico"}}">
     <link rel="stylesheet" href="{{ asset "lib/css/main.css"}}">
+    {{#if post}}
     {{ghost_head}}
+    {{else}}
+    <meta property="og:locale" content="es">
+    <meta property="og:site_name" content="Carlos Azaustre | Web Developer Blog" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:title" content="Cómo conectarte remótamente a tu base de datos MongoDB" />
+    <meta property="og:description" content="{{meta_description}}" />
+    <meta property="og:url" content="http://carlosazaustre.es/blog" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="{{meta_description}}" />
+    <meta name="twitter:url" content="http://carlosazaustre.es" />
+    <meta name="twitter:image:src" content="" />
+    {{/if}}
   </head>
   <body>
 
+    {{> navbar}}
+
     {{{body}}}
 
-    <footer class="site-footer text center padding">
-      <div>&copy; 2012 - {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. Todos los derechos reservados.</div>
-      <div><a href="/blog/politica-de-cookies/">Política de cookies</a> | <a href="/blog/legal">Aviso legal</a></div>
-      <br/>
-      <div>El contenido de este blog está publicado con <a href="https://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-Compartir igual 4.0 internacional</a></div>
-      <div><a href="https://github.com/dreyacosta/velox" target="_blank"><strong>Velox theme</strong></a> por <a href="http://dreyacosta.com/">David Rey</a>. Modificaciones por <a href="//twitter.com/carlosazaustre">Carlos Azaustre</a>. | Publicado con <a href="http://ghost.org"><strong>Ghost</strong></a></div>
-      <br/>
-      <div>Alojado en <a href="https://www.digitalocean.com/?refcode=f716de9860aa"><img width="200" src="{{ asset "digitalocean.png"}}"/></a></div>
-    </footer>
+    {{> footer}}
 
     {{> load-fonts}}
     {{> load-prism}}

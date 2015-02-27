@@ -108,7 +108,7 @@ blockquote {
   border-left-width: 10px;
   border-style: solid;
   border-color: #e8e8e8;
-  font-family: 'Raleway';
+  font-family: 'Lato';
   font-size: 1.2rem;
   padding: 0 0 0 20px;
   line-height: 1.9rem;
@@ -119,7 +119,7 @@ blockquote:last-child {
 }
 h1, h2, h3, h4, h5, h6 {
   color: inherit;
-  font-family: 'Raleway';
+  font-family: 'Lato';
   font-weight: 700;
   margin-bottom: .666666666666667rem;
   letter-spacing: inherit;
@@ -237,6 +237,7 @@ th, td {
   padding: 10px;
 }
 button, input, input[type="text"], input[type="password"], input[type="checkbox"], input[type="radio"], input[type="email"], input[type="date"], input[type="search"], input[type="submit"], select, textarea {
+  border-radius: 5px;
   border-color: rgba(0, 0, 0, 0.15);
   border-style: solid;
   border-width: 1px;
@@ -245,7 +246,7 @@ button, input, input[type="text"], input[type="password"], input[type="checkbox"
   font-size: 100%;
   margin: 0 0 4px 0;
   outline: 0;
-  padding: 6px;
+  padding: 1.5em;
   -webkit-appearance: none;
   vertical-align: middle;
 }
@@ -264,9 +265,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 input:focus, textarea:focus {
   border-color: rgba(0, 0, 0, 0.3);
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-width: 1px;
+  border-width: 2px;
   -webkit-transition: border-color 600ms;
   -moz-transition: border-color 600ms;
   -ms-transition: border-color 600ms;
@@ -772,7 +771,7 @@ cursor: pointer;
 .landing .scroll-down {
   bottom: 0;
   color: #969696;
-  font-family: 'Raleway';
+  font-family: 'Lato';
   padding: 1rem;
 }
 .landing .scroll-down.border {
@@ -812,7 +811,7 @@ cite {
 }
 .blog-title {
   font-size: 2rem;
-  font-family: 'Raleway';
+  font-family: 'Lato';
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -822,7 +821,7 @@ cite {
   margin: 0 auto;
 }
 .blog-info {
-  font-family: 'Raleway';
+  font-family: 'Lato';
 }
 .blog-info .author, .blog-info .title {
   position: absolute;
@@ -863,7 +862,7 @@ cite {
   line-height: 1.4em;
 }
 .post-header time, .post-cover time {
-  font-family: 'Raleway';
+  font-family: 'Lato';
   color: #969696;
 }
 .post-cover {
@@ -894,7 +893,7 @@ cite {
 }
 .author {
   color: #969696;
-  font-family: 'Raleway';
+  font-family: 'Lato';
   font-weight: 300;
   min-height: 40px;
   margin-top: 10px;
@@ -913,7 +912,7 @@ cite {
   margin-right: 6px;
 }
 .author-post {
-  font-family: 'Raleway';
+  font-family: 'Lato';
   font-weight: 300;
   min-height: 70px;
 }
@@ -930,12 +929,12 @@ cite {
   margin-bottom: 0;
 }
 .text .raleway {
-  font-family: 'Raleway'
+  font-family: 'Lato'
 }
 .site-footer {
   background: linear-gradient(#da5715,#ec7539),#da5715;
   color: rgba(255,255,255,0.65);
-  font-family: 'Raleway';
+  font-family: 'Lato';
   font-weight: 300;
 }
 .video-container {
@@ -1085,6 +1084,9 @@ pre[class*="language-"] {
     width: 80%;
   }
 }
+
+/* New Modules */
+
 .btn-green {
   background-color: #690;
 }
@@ -1092,4 +1094,116 @@ pre[class*="language-"] {
   background-color: #ec7539;
   color: rgba(255,255,255, 0.75);
   font-weight: bold;
+}
+
+#newsletter form {
+  background-color: #eaeaea;
+  padding: 1em;
+  text-align: center;
+}
+
+.navbar {
+  background: #222;
+  height: 50px;
+}
+
+.navbar-content {
+  color: #eaeaea;
+}
+
+.blog-info .author a {
+  font-family: "Lato";
+  font-size: 12pt;
+  font-weight: bold !important;
+}
+
+.navbar-content .blog-info ul {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 45px;
+  float: right;
+  position: relative;
+  z-index: 10;
+  margin-right: 2em;
+  font-family: "Lato";
+  font-size: 12pt;
+  font-weight: bold !important;
+}
+.navbar-content .blog-info li {
+  display: inline-block;
+}
+
+.navbar-content .blog-info li:after {
+  content: " | ";
+  font-weight: normal;
+}
+.navbar-content .blog-info li:last-child:after {
+  content: "";
+}
+
+.navbar-content .blog-info a {
+  padding: .5em;
+}
+
+.navbar-content .blog-info a:hover {
+  border-top: 4px solid #ec7539;
+  text-decoration: none;
+}
+
+.footer {
+  font-family: 'Lato';
+  color: #ccc;
+  background: #222;
+  display: -webkit-box;
+  display: -moz-fox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.footer a {
+  font-weight: bold;
+}
+
+.footer-column {
+  width: 33%;
+  border-right: 1px solid #555;
+}
+
+.footer-column:last-child {
+  border-right: 0
+}
+
+.footer-column ul {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    border: 0;
+  }
+}
+
+hr {
+  border: 1px solid #eaeaea;
+  margin: 0;
+}
+
+.text-orange {
+  color: #ec7539;
+  text-transform: uppercase;
+  font-size: .7em;
+}
+
+.text-small {
+  font-size: .8em;
+  line-height: 1.5em;
 }
