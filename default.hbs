@@ -64,6 +64,17 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $("body").fitVids();
+
+        var $imgLogoFront = $(".blog-logo--front");
+        var $imgLogoBack = $(".blog-logo--back");
+
+        $imgLogoFront.on("mouseover", function(e) {
+          $imgLogoBack.toggleClass("blog-logo--back--show");
+        });
+        $imgLogoFront.on("mouseout", function(e) {
+          $imgLogoBack.toggleClass("blog-logo--back--show");
+        });
+        
       });
     </script>
     {{> google-analytics}}

@@ -5,8 +5,9 @@
     <div class="cover-mask padding">
       {{#if @blog.logo}}
       <nav>
-        <a href="{{@blog.url}}" class="inline blog-logo-extra-border border circle">
-          <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
+        <a href="{{@blog.url}}" class="inline">
+          <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo blog-logo--front center border circle" />
+          <img src="{{ asset "jslogo.jpg" }}" alt="{{@blog.title}}" class="blog-logo blog-logo--back center border circle" />
         </a>
       </nav>
       {{/if}}
