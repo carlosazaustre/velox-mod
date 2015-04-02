@@ -1211,7 +1211,7 @@ hr {
 }
 
 /* Navbar Header Responsive */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
   .blog-info ul {
     position: absolute !important;
     top: 44px;
