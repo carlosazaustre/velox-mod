@@ -848,6 +848,7 @@ cite {
   max-width: 480px;
   margin: 0 auto;
 }
+
 .blog-info {
   font-family: 'Lato';
 }
@@ -1182,6 +1183,7 @@ pre[class*="language-"] {
 
 .footer {
   font-family: 'Lato';
+  font-size: .9em;
   color: #ccc;
   background: #222;
   display: -webkit-box;
@@ -1195,11 +1197,11 @@ pre[class*="language-"] {
 
 .footer a {
   font-weight: bold;
+  font-size: .8em;
 }
 
 .footer-column {
   width: 33%;
-  border-right: 1px solid #555;
 }
 
 .footer-column:last-child {
@@ -1218,13 +1220,12 @@ pre[class*="language-"] {
 
   .footer-column {
     width: 100%;
-    border: 0;
   }
 }
 
 hr {
   border: 1px solid #eaeaea;
-  margin: 2em 0;
+  margin: 1.5em 0;
 }
 
 .text-orange {
@@ -1236,6 +1237,18 @@ hr {
 .text-small {
   font-size: .8em;
   line-height: 1.5em;
+}
+
+@media screen and (max-width: 720px) {
+  .blog-title {
+    font-size: 1.5rem !important;
+  }
+  .blog-description {
+    font-size: .75rem !important;
+  }
+  .blog-logo--back {
+    display: none !important;
+  }
 }
 
 /* Navbar Header Responsive */
