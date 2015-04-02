@@ -45,10 +45,11 @@
     {{/if}}
 
     <div class="entry margin_bottom">
+      <section class="share" style="text-align: center;">
+        <div class="addthis_sharing_toolbox"></div>
+      </section>
       {{content}}
     </div>
-
-    <div id="#recommended"></div>
 
     <hr/>
     {{> "newsletter"}}
@@ -56,24 +57,6 @@
     <section class="share" style="text-align: center;">
       <h5>Si te ha gustado éste artículo, por favor, compártelo para que otros puedan leerlo :)</h5>
       <div class="addthis_sharing_toolbox"></div>
-      <!--<a class="fa-stack fa-2x"
-         href="https://twitter.com/share?text={{encode title}}&nbsp;by&nbsp;@carlosazaustre&amp;url={{url absolute="true"}}"
-         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-        <i class="fa fa-circle fa-stack-2x" style="color:#5DB5DE;"></i>
-        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-      </a>
-      <a class="fa-stack fa-2x"
-         href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-        <i class="fa fa-circle fa-stack-2x" style="color:#3D62B3;"></i>
-        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-      </a>
-      <a class="fa-stack fa-2x"
-         href="https://plus.google.com/share?url={{url absolute="true"}}"
-         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-        <i class="fa fa-circle fa-stack-2x" style="color:#DD4B39;"></i>
-        <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-      </a>-->
     </section>
 
     {{> "adverstising"}}
@@ -96,7 +79,6 @@
 
     {{> disqus-comment}}
   </article>
-  <aside id="#recommended"></aside>
 </main>
 
 {{/post}}
