@@ -808,7 +808,35 @@ cite {
 }
 .blog-logo {
   max-width: 120px;
+  position: relative;
 }
+
+.blog-logo--front {
+  z-index: 2;
+  left: 0;
+  -webkit-transition: transform .5s ease-out;
+  -ms-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+.blog-logo--front:hover {
+  transform: rotate(-14deg);
+}
+
+.blog-logo--back {
+  z-index: 1;
+  margin-bottom: -120px !important;
+  top: -120px;
+  left: 0;
+  transition: left .5s ease-out;
+  -webkit-transition: left .5s ease-out;
+  -ms-transition: left .5s ease-out;
+  -o-transition: left .5s ease-out;
+}
+.blog-logo--back--show {
+  left: 90px;
+}
+
 .blog-title {
   font-size: 2rem;
   font-family: 'Lato';
@@ -820,6 +848,7 @@ cite {
   max-width: 480px;
   margin: 0 auto;
 }
+
 .blog-info {
   font-family: 'Lato';
 }
@@ -1154,6 +1183,7 @@ pre[class*="language-"] {
 
 .footer {
   font-family: 'Lato';
+  font-size: .9em;
   color: #ccc;
   background: #222;
   display: -webkit-box;
@@ -1167,11 +1197,11 @@ pre[class*="language-"] {
 
 .footer a {
   font-weight: bold;
+  font-size: .8em;
 }
 
 .footer-column {
   width: 33%;
-  border-right: 1px solid #555;
 }
 
 .footer-column:last-child {
@@ -1182,7 +1212,7 @@ pre[class*="language-"] {
   list-style-type: none;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 972px) {
   .footer {
     display: inline-block;
     text-align: center;
@@ -1190,13 +1220,12 @@ pre[class*="language-"] {
 
   .footer-column {
     width: 100%;
-    border: 0;
   }
 }
 
 hr {
   border: 1px solid #eaeaea;
-  margin: 0;
+  margin: 1.5em 0;
 }
 
 .text-orange {
@@ -1210,8 +1239,20 @@ hr {
   line-height: 1.5em;
 }
 
+@media screen and (max-width: 720px) {
+  .blog-title {
+    font-size: 1.5rem !important;
+  }
+  .blog-description {
+    font-size: .75rem !important;
+  }
+  .blog-logo--back {
+    display: none !important;
+  }
+}
+
 /* Navbar Header Responsive */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 972px) {
   .blog-info ul {
     position: absolute !important;
     top: 44px;
