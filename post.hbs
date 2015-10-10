@@ -52,12 +52,12 @@
     </div>
 
     <hr/>
-    {{> "newsletter"}}
-    <hr/>
     <section class="share" style="text-align: center;">
       <h5>Si te ha gustado éste artículo, por favor, compártelo para que otros puedan leerlo :)</h5>
       <div class="addthis_sharing_toolbox"></div>
     </section>
+    <hr/>
+    {{> "newsletter"}}
 
     {{> "adverstising"}}
 
@@ -66,12 +66,14 @@
       {{#if author}}
       {{#if author.image}}
       <div class="author-thumb inline middle">
-        <img src="{{author.image}}" alt="Author image" class="border circle" />
+        <img src="https://s3-eu-west-1.amazonaws.com/carlosazaustre-blog/carlos-azaustre-desarrollo-y-formacion-web.png" alt="Carlos Azaustre" class="border circle" />
       </div>
       {{/if}}
       <div class="inline middle align vertical">
         <div>{{author}}</div>
         <div>{{author.bio}}</div>
+        <br/>
+        <div>S&iacute;gueme en Twitter en <a href="//twitter.com/carlosazaustre">@carlosazaustre</a> y en <a href="//facebook.com/com/carlosazaustre.web">Facebook</a></div>
       </div>
 
       {{/if}}
