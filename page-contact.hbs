@@ -1,0 +1,58 @@
+{{!< default}}
+{{#post}}
+
+{{#if image}}
+
+<header>
+  <div class="cover" style="background-image: url({{image}})">
+    <div class="cover-mask">
+
+      <div class="post-cover site_width site_width padding">
+
+        <h1>{{{title}}}</h1>
+
+        <div style="display: none;">
+          <img id="feature-image" src="{{image}}" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+
+{{else}}
+
+{{> "header"}}
+
+{{/if}}
+
+<main class="site_width padding" role="main">
+  <article class="{{post_class}}">
+    {{#if image}}
+    {{else}}
+    <header class="post-header">
+      <h1>{{{title}}}</h1>
+    </header>
+    {{/if}}
+
+    <div class="entry">
+      {{content}}
+    </div>
+    <!-- www.123contactform.com script begins here -->
+
+<script type="text/javascript">var servicedomain="www.123contactform.com"; var frmRef=''; try { frmRef=window.top.location.href; } catch(err) {}; var cfJsHost = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E")); frmRef=encodeURIComponent(frmRef).replace('%26','[%ANDCHAR%]'); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/jsform-1627405.js?ref="+frmRef+"' type='text/javascript'%3E%3C/script%3E")); </script>
+
+<p>Powered by <a class="footerLink13" title="123ContactForm" href="http://www.123contactform.com">123ContactForm</a>
+   | <a style="font-size:small!important;color:#000000!important; text-decoration:underline!important;" title="¿Parece phishing? ¡Repórtalo!" href="http://www.123contactform.com/sfnew.php?s=123contactform-52&control119314=http:///contact-form--1627405.html&control190=Report%20abuse" rel="nofollow">Reportar abuso</a></p><!-- www.123contactform.com script ends here -->
+
+
+    {{!
+    Here, you can add disqus comment.
+    Also go to partials/disqus-comment to set your SHORTNAME.
+  }}
+  {{!> disqus-comment}}
+</article>
+</main>
+
+{{/post}}
