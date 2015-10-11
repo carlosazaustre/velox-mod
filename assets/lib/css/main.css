@@ -20,7 +20,7 @@ html, body {
 }
 html {
   color: #4d4d4d;
-  font-family: 'Merriweather';
+  font-family: 'Roboto Slab';
   font-size: 16px;
   font-weight: 300;
   letter-spacing: none;
@@ -251,7 +251,7 @@ button, input, input[type="text"], input[type="password"], input[type="checkbox"
   vertical-align: middle;
 }
 input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="search"], select, textarea {
-  width: 100%
+  width: 50%
 }
 input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="search"], .select {
   height: 38px;
@@ -859,7 +859,7 @@ cite {
 .blog-info .author {
   color: #fff;
   margin: 0;
-  left: 26px;
+  /*left: 26px;*/
 }
 .blog-info .author a {
   font-weight: 100;
@@ -870,7 +870,7 @@ cite {
   width: 32px;
 }
 .blog-info .title {
-  right: 26px;
+  /*right: 26px;*/
 }
 
 .cover {
@@ -880,7 +880,7 @@ cite {
 .cover-mask {
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
-  padding-top: 3em;
+  padding-top: 2em;
 }
 .cover-mask img {
   border: 3px solid rgba(255, 255, 255, 0.7);
@@ -898,19 +898,19 @@ cite {
 }
 .post-cover {
   margin-bottom: 0;
-  padding-top: 250px;
+  margin-top: 100px;
 }
 .post-cover h1 {
   font-size: 3.4rem;
 }
 .post-cover time {
-  background: rgba(0, 0, 0, 0.5);
   color: #d3d3d3;
 }
 .post img {
   display: block;
   margin: 0 auto;
 }
+
 .entry a {
   color: #da5715;
   text-decoration: underline;
@@ -943,9 +943,10 @@ cite {
   margin-right: 6px;
 }
 .author-post {
-  font-family: 'Lato';
+  font-family: 'Roboto Slab';
   font-weight: 300;
   min-height: 70px;
+  margin: 4em 0;
 }
 .author-post img {
   max-width: 70px;
@@ -1129,13 +1130,13 @@ pre[class*="language-"] {
 
 #newsletter form {
   background-color: #eaeaea;
-  padding: 1em;
+  padding: 2em 1em .25em 1em;
   text-align: center;
 }
 
 .navbar {
-  background: #222;
-  height: 50px;
+  background-color: #222;
+  height: 48px;
 }
 
 .navbar-content {
@@ -1181,11 +1182,14 @@ pre[class*="language-"] {
   text-decoration: none;
 }
 
+.footer_black {
+  background: #222;
+}
+
 .footer {
   font-family: 'Lato';
   font-size: .9em;
   color: #ccc;
-  background: #222;
   display: -webkit-box;
   display: -moz-fox;
   display: -ms-flexbox;
@@ -1225,7 +1229,6 @@ pre[class*="language-"] {
 
 hr {
   border: 1px solid #eaeaea;
-  margin: 1.5em 0;
 }
 
 .text-orange {

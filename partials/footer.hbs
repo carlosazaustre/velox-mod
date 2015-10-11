@@ -1,35 +1,37 @@
-<footer class="footer padding">
+<div class="footer_black">
+  <footer class="footer site_width padding">
 
-  <div class="footer-column">
-    &copy; 2012 - {{date format="YYYY"}} <a href="/">Carlos Azaustre</a>.
-    <br><br>
-    Desarrollador Web, Frontend y Backend en Tecnologías JavaScript: AngularJS, NodeJS, HTML5, CSS.
-    Formador Web y Blogger. Puedes contactarme en mi correo
-    <br><br>
-    <a class="btn btn-orange small border radius" href="mailto:carlosazaustre@gmail.com"><span class="fa fa-envelope"></span> Contacto</a>
-    <br><br>También puedesseguirme en
-    {{> "social"}}
+    <div class="footer-column">
+      &copy; 2012 - {{date format="YYYY"}} <a href="/">Carlos Azaustre</a>.
+      <br><br>
+      Desarrollador Web, Frontend y Backend en Tecnologías JavaScript: AngularJS, NodeJS, HTML5, CSS.
+      Formador Web y Blogger. Puedes contactarme en mi correo
+      <br><br>
+      <a class="btn btn-orange small border radius" href="mailto:carlosazaustre@gmail.com"><span class="fa fa-envelope"></span> Contacto</a>
+      <br><br>También puedes seguirme en
+      {{> "social"}}
+    </div>
+
+    <div class="footer-column">
+      <ul>
+        <li><a href="/blog/sobre-mi">Sobre Mi</a></li>
+        <li><a href="/blog/curriculum">Currículum</a></li>
+        <li><a href="/blog/ebook-angular">Libros Publicados</a></li>
+        <li><a href="/blog/formacion-para-empresas">Cursos de Formación</a></li>
+        <br>
+        <li><a href="/blog/politica-de-cookies/">Política de Cookies</a></li>
+        <li><a href="/blog/legal">Aviso legal</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column text center">
+      Publicado con <a href="//tryghost.com">Ghost</a>
+      <br><br>
+      Alojado en <br>
+      <a href="//carlosazaustre.es/ir/digitalocean"><img width="200" src="{{ asset "digitalocean.png"}}"/></a>
+      <br><br>
+      <span class="text-small">El contenido de este blog está publicado con <a href=https://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-Compartir igual 4.0 internacional</a></span>
+    </div>
+
   </div>
-
-  <div class="footer-column">
-    <ul>
-      <li><a href="/blog/sobre-mi">Sobre Mi</a></li>
-      <li><a href="/blog/curriculum">Currículum</a></li>
-      <li><a href="/blog/ebook-angular">Libros Publicados</a></li>
-      <li><a href="/blog/formacion-para-empresas">Formación</a></li>
-      <li><a href="/camisetas-geeks">Camisetas</a></li>
-      <li><a href="/blog/politica-de-cookies/">Política de Cookies</a></li>
-      <li><a href="/blog/legal">Aviso legal</a></li>
-    </ul>
-  </div>
-
-  <div class="footer-column text center">
-    Publicado con <a href="//tryghost.com">Ghost</a>
-    <br><br>
-    Alojado en <br>
-    <a href="//carlosazaustre.es/ir/digitalocean"><img width="200" src="{{ asset "digitalocean.png"}}"/></a>
-    <br><br>
-    <span class="text-small">El contenido de este blog está publicado con <a href=https://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-Compartir igual 4.0 internacional</a></span>
-  </div>
-
-</footer>
+</div>

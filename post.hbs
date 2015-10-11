@@ -43,37 +43,43 @@
       </time>
     </header>
     {{/if}}
-
+    
     <div class="entry margin_bottom">
       <section class="share" style="text-align: center;">
         <div class="addthis_sharing_toolbox"></div>
       </section>
+      <br><br>
       {{content}}
     </div>
 
-    <hr/>
     <section class="share" style="text-align: center;">
-      <h5>Si te ha gustado éste artículo, por favor, compártelo para que otros puedan leerlo :)</h5>
+      <h5>Si te ha gustado éste artículo, te animo a compartirlo para que otros puedan leerlo :)</h5>
       <div class="addthis_sharing_toolbox"></div>
     </section>
-    <hr/>
     {{> "newsletter"}}
 
-    {{> "adverstising"}}
-
-    <hr>
     <footer class="author-post relative margin_top">
       {{#if author}}
       {{#if author.image}}
       <div class="author-thumb inline middle">
-        <img src="https://s3-eu-west-1.amazonaws.com/carlosazaustre-blog/carlos-azaustre-desarrollo-y-formacion-web.png" alt="Carlos Azaustre" class="border circle" />
+        <img src="https://carlosazaustre.es/blog/content/images/2015/10/carlos-azaustre-desarrollo-y-formacion-web.png" alt="Carlos Azaustre" class="border circle" />
       </div>
       {{/if}}
       <div class="inline middle align vertical">
-        <div>{{author}}</div>
-        <div>{{author.bio}}</div>
+        <div>
+          ¡Hola! Soy <a href="//carlosazaustre.es/blog/sobre-mi">{{author.name}}</a>,
+          autor del blog que estás leyendo dónde comparto tutoriales de programación
+          en JavaScript y artículos sobre tecnologías web en general. También soy autor
+          del libro <a href="/blog/ebook-angular">"Desarrollo web ágil con AngularJS"</a>
+          y estoy en proceso de desarrollo de mi segundo libro
+          <a href="//leanpub.com/aprendiendojavascript">"Aprendiendo JavaScript"</a>.
+          Si te gusta lo que lees, no dudes en <a href="/blog/suscribete">suscribirte</a>
+        </div>
         <br/>
-        <div>S&iacute;gueme en Twitter en <a href="//twitter.com/carlosazaustre">@carlosazaustre</a> y en <a href="//facebook.com/com/carlosazaustre.web">Facebook</a></div>
+        <div>
+          S&iacute;gueme en Twitter en <a href="//twitter.com/carlosazaustre">@carlosazaustre</a>
+          y en <a href="//facebook.com/carlosazaustre.web">Facebook</a>
+        </div>
       </div>
 
       {{/if}}
