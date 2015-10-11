@@ -1,21 +1,44 @@
 {{!< default}}
+{{#post}}
+
+{{#if image}}
+
+<header>
+  <div class="cover" style="background-image: url({{image}})">
+    <div class="cover-mask">
+
+      <div class="post-cover site_width site_width padding">
+
+        <h1>{{{title}}}</h1>
+
+        <div style="display: none;">
+          <img id="feature-image" src="{{image}}" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+
+{{else}}
 
 {{> "header"}}
 
+{{/if}}
+
 <main class="site_width padding" role="main">
   <article class="{{post_class}}">
-
-    {{#post}}
-
+    {{#if image}}
+    {{else}}
     <header class="post-header">
       <h1>{{{title}}}</h1>
     </header>
+    {{/if}}
 
     <div class="entry">
       {{content}}
     </div>
-
-    {{/post}}
 
     {{!
     Here, you can add disqus comment.
@@ -24,3 +47,5 @@
   {{!> disqus-comment}}
 </article>
 </main>
+
+{{/post}}
