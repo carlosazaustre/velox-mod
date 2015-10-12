@@ -85,16 +85,16 @@
     {{> load-prism}}
     {{> load-fitvid}}
     <script async type="text/javascript">
-      (function() {
-        var $imgLogoFront = $(".blog-logo--front");
-        var $imgLogoBack = $(".blog-logo--back");
-        $imgLogoFront.on("mouseover", function(e) {
-          $imgLogoBack.toggleClass("blog-logo--back--show");
-        });
-        $imgLogoFront.on("mouseout", function(e) {
-          $imgLogoBack.toggleClass("blog-logo--back--show");
-        });
-      }());
+    (function() {
+      var imgLogoFront = document.querySelector('.blog-logo--front');
+      var imgLogoBack = document.querySelector('.blog-logo--back');
+      imgLogoFront.addEventListener('mouseenter', toggleClass, true);
+      imgLogoFront.addEventListener('mouseleave', toggleClass, true);
+
+      function toggleClass () {
+        imgLogoBack.classList.toggle('blog-logo--back--show');
+      }
+    }());
     </script>
     {{> google-analytics}}
     <script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54e489d6305b1d7a"></script>
