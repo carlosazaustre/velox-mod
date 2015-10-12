@@ -878,7 +878,7 @@ cite {
 .cover-mask {
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
-  padding-top: 2em;
+  padding-top: 6em;
 }
 .cover-mask img {
   border: 3px solid rgba(255, 255, 255, 0.7);
@@ -1181,6 +1181,7 @@ pre[class*="language-"] {
   height: 48px;
   position: fixed;
   width: 100%;
+  z-index: 10
 }
 
 .navbar-content {
