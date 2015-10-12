@@ -1,0 +1,16 @@
+<script>
+  (function() {
+    var l = document.createElement('script');
+    l.type = 'text/javascript';
+    l.async = true;
+    l.src = '{{asset "lib/fitvid/jquery.fitvid.js"}}';
+    var h = document.getElementsByTagName('head')[0];
+    h.appendChild(l, h);
+  }());
+
+  var fitVideos = function() {
+    $("body").fitVids();
+  };
+
+  window.addEventListener('load', fitVideos);
+</script>

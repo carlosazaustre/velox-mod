@@ -80,14 +80,12 @@
 
     {{> footer}}
 
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
     {{> load-fonts}}
     {{> load-prism}}
-
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
-    <script type="text/javascript" src="{{ asset "lib/fitvid/jquery.fitvid.js" }}"></script>
+    {{> load-fitvid}}
     <script async type="text/javascript">
-      $(document).ready(function() {
-        $("body").fitVids();
+      (function() {
         var $imgLogoFront = $(".blog-logo--front");
         var $imgLogoBack = $(".blog-logo--back");
         $imgLogoFront.on("mouseover", function(e) {
@@ -96,7 +94,7 @@
         $imgLogoFront.on("mouseout", function(e) {
           $imgLogoBack.toggleClass("blog-logo--back--show");
         });
-      });
+      }());
     </script>
     {{> google-analytics}}
     <script async src="//load.sumome.com/" data-sumo-site-id="c236ed7e2fbc81cd4cb3cad9053ba81fa974b30a7759a5bc248716e6daad21d3" async="async"></script>
