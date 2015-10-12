@@ -1179,6 +1179,8 @@ pre[class*="language-"] {
 .navbar {
   background-color: #222;
   height: 48px;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-content {
@@ -1306,6 +1308,9 @@ hr {
     font-size: 8pt !important;
     width: 100%;
     margin: 0 auto;
+  }
+  .blog-info .author {
+    width: 100%;
   }
   .blog-info .author a {
     font-size: 10pt;
