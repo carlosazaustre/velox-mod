@@ -1,7 +1,8 @@
 <script>
   var cb = function() {
     var createLink = function(source) {
-      var l = document.createElement('link'); l.rel = 'stylesheet';
+      var l = document.createElement('link');
+      l.rel = 'stylesheet';
       l.href = source;
       var h = document.getElementsByTagName('head')[0]; h.appendChild(l, h);
     };
