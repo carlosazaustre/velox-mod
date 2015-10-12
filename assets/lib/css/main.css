@@ -427,13 +427,17 @@ ul.circle, ol.circle, ul.circle ul, ol.circle ul {
 ul.none, ol.none, ul.none ul, ol.none ul {
   list-style: none;
 }
+.list-sections-header {
+  text-align: center;
+  margin: 0 0 2em 0;
+}
 .list-sections {
   list-style-type: none;
   border-bottom: 2px solid #ddd;
   width: 100%;
   text-align: center;
   padding-bottom: 1em;
-  margin-bottom: -1em;
+  margin: 0 0 -1em 0;
 }
 .list-sections li {
   display: inline-block;
@@ -455,7 +459,7 @@ img.small {
 }
 .site_width {
 margin: 0 auto;
-max-width: 800px;
+max-width: 900px;
 }
 .scroll {
 overflow: auto;
