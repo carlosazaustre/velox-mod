@@ -427,6 +427,17 @@ ul.circle, ol.circle, ul.circle ul, ol.circle ul {
 ul.none, ol.none, ul.none ul, ol.none ul {
   list-style: none;
 }
+.list-sections {
+  list-style-type: none;
+  border-bottom: 2px solid #ddd;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1em;
+  margin-bottom: -1em;
+}
+.list-sections li {
+  display: inline-block;
+}
 img {
   margin: 0 0 0 0;
 }
