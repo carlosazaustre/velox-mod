@@ -1,0 +1,79 @@
+{{!< default}}
+{{#post}}
+
+{{#if image}}
+
+<header>
+  <div class="cover" style="background-image: url({{image}})">
+    <div class="cover-mask">
+
+      <div class="post-cover site_width site_width padding">
+
+        <h1>{{{title}}}</h1>
+
+        <div style="display: none;">
+          <img id="feature-image" src="{{image}}" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+
+{{else}}
+
+{{> "header"}}
+
+{{/if}}
+
+<main class="site_width padding" role="main">
+  <article class="{{post_class}}">
+    {{#if image}}
+    {{else}}
+    <header class="post-header">
+      <h1>{{{title}}}</h1>
+    </header>
+    {{/if}}
+
+    <div class="entry">
+      {{content}}
+
+      <article itemscope itemtype="https://schema.org/Event">
+        <h4 itemtype="name">CodeWeek #CodeCC</h4>
+        <ul>
+          <li><time itemtype="startDate" content="2015-10-17T10:00">Sábado, 17 de Octubre</time></li>
+          <li itemtype="organizer">GDG Cáceres</li>
+          <li itemtype="location">Escuela Politecnica de Cáceres (España)</li>
+          <li><a itemprop="url" href="//codeweek.gdgcaceres.es/">Web del evento</a></li>
+        </ul>
+      </article>
+      <article itemscope itemtype="https://schema.org/Event">
+        <h4 itemtype="name">Curso de Responsive Design</h4>
+        <ul>
+          <li><time itemtype="startDate" content="2015-10-27T10:00">Martes, 27 de Octubre</time></li>
+          <li itemtype="organizer">Platzi</li>
+          <li itemtype="location">Online</li>
+          <li><a itemprop="url" href="//platzi.com/cursos/responsive-design/">Web del curso</a></li>
+        </ul>
+      </article>
+      <article itemscope itemtype="https://schema.org/Event">
+        <h4 itemtype="name">Hack2Progress</h4>
+        <ul>
+          <li><time itemtype="startDate" content="2015-11-20T10:00">Viernes, 20 de Noviembre</time></li>
+          <li itemtype="organizer">CIC Consulting Informático</li>
+          <li itemtype="location">Palacio de la Magdalena, Santander (España)</li>
+          <li><a itemprop="url" href="//www.hack2progress.com/">Web del evento</a></li>
+        </ul>
+      </article>
+    </div>
+
+    {{!
+    Here, you can add disqus comment.
+    Also go to partials/disqus-comment to set your SHORTNAME.
+  }}
+  {{!> disqus-comment}}
+</article>
+</main>
+
+{{/post}}
